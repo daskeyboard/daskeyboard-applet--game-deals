@@ -35,7 +35,7 @@
   },
   "qConfig": {
     "geometry": {
-      "width": 4,
+      "width": 1,
       "height": 1,
       "defaults": {
         "origin": {
@@ -54,32 +54,14 @@
     },
     "questions": [
       {
-        "key": "cityId",
-        "label": "Choose a city",
-        "help": "select a location from the list",
+        "key": "searchTerms",
+        "label": "What words should trigger a notification?",
+        "help": "Enter search terms like 'Battlefield'.",
+        "placeholder": "Game name..",
         "required": true,
         "order": 1,
-        "controlType": "dropdown",
-        "dynamic": true,
-        "options": []
-      },
-      {
-        "key": "units",
-        "label": "Choose a unit type",
-        "help": "select a unit type",
-        "required": true,
-        "order": 2,
-        "controlType": "dropdown",
-        "options": [
-          {
-            "key": "metric",
-            "value": "Metric"
-          },
-          {
-            "key": "imperial",
-            "value": "Imperial"
-          }
-        ]
+        "controlType": "textbox",
+        "isArray": true
       }
     ],
     "requirements": {
