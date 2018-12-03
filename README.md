@@ -1,16 +1,14 @@
 # Q Applet Game Deals
 
-Displays the weather forecast on a Das Keyboard Q series.
+See alerts for recent game deals, on a Das Keyboard Q series.
 
-[GitHub repository](https://github.com/daskeyboard/q-applet-game-deals)
+[GitHub repository](https://github.com/daskeyboard/daskeyboard-applet--game-deals)
 
 ## Example
 
-Displays 4-day weather forecast on a Das Keyboard Q Series.
-Each color corresponds to a weather change:  
-clear or sunny (yellow), cloudy (purple), rainy (blue), storm (red), snow (white).
+Displays a signal when a new deal goes live for a wanted game.
 
-![Weather Forecast on a Das Keybaord Q](https://raw.githubusercontent.com/daskeyboard/daskeyboard-applet--weather-forecast/master/assets/q-applet-game-deals-image.png "Q Weather Forecast")
+![Game Deals on a Das Keybaord Q](https://raw.githubusercontent.com/daskeyboard/daskeyboard-applet--weather-forecast/master/assets/q-applet-game-deals-image.png "Q Game Deals")
 
 ## Changelog
 
@@ -42,5 +40,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-# daskeyboard-applet--game-deals
 # daskeyboard-applet--game-deals

@@ -1,7 +1,7 @@
-# Weather Forecast
+# Game Deals
 
-Displays a 4-day weather forecast.
+Displays a signal whenever a new deal goes live on a wanted game.
 
-![Weather Forecast on a Das Keybaord Q](https://raw.githubusercontent.com/daskeyboard/daskeyboard-applet--weather-forecast/master/assets/KeyColorsLegend.png "Q Weather Forecast color legend")
+![Game Deals on a Das Keybaord Q](https://raw.githubusercontent.com/daskeyboard/daskeyboard-applet--weather-forecast/master/assets/q-applet-game-deals-image.png "Q Game Deals")
 
-This applet uses the weather forecast from the [US National weather service](https://www.weather.gov/). 
+This applet follows the "Video Game Deals" forum on [Cheapassgamer.com](https://www.cheapassgamer.com/forum/10-video-game-deals/).
