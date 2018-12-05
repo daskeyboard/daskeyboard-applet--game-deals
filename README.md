@@ -1,4 +1,4 @@
-# Q Applet Game Deals
+# Q Applet: Game Deals
 
 See alerts for recent game deals, on a Das Keyboard Q series.
 
@@ -8,7 +8,7 @@ See alerts for recent game deals, on a Das Keyboard Q series.
 
 Displays a signal when a new deal goes live for a wanted game.
 
-![Game Deals on a Das Keybaord Q](https://raw.githubusercontent.com/daskeyboard/daskeyboard-applet--weather-forecast/master/assets/q-applet-game-deals-image.png "Q Game Deals")
+![Game Deals on a Das Keybaord Q](/assets/image.png "Q Game Deals")
 
 ## Changelog
 
@@ -16,10 +16,10 @@ Displays a signal when a new deal goes live for a wanted game.
 
 ## Installation
 
-Requires a Das Keyboard Q Series: www.daskeyboard.com/5q
+Requires a Das Keyboard Q Series: www.daskeyboard.com
 
 Installation, configuration and uninstallation of applets is done within
-the Q Desktop application (https://www.daskeyboard.io/get-started/software/)
+the Q Desktop application (https://www.daskeyboard.com/q)
 
 ## Contributions
 
@@ -40,4 +40,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-# daskeyboard-applet--game-deals

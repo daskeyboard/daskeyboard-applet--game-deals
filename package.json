@@ -1,5 +1,5 @@
 {
-  "name": "q-applet-game-deals",
+  "name": "daskeyboard-applet--game-deals",
   "displayName": "Game Deals",
   "version": "1.0.0",
   "description": "Receive notifications of game deals on a Das Keyboard Q",
@@ -8,8 +8,8 @@
   "appUrl": "",
   "isSingleton": false,
   "videoUrl": "",
-  "icon": "assets/q-game-deals.png",
-  "image": "assets/q-game-deals-image.png",
+  "icon": "assets/icon.png",
+  "image": "assets/image-missing.png",
   "publisher": "Das Keyboard",
   "authorName": "Das Keyboard team",
   "authorUrl": "https://twitter.com/daskeyboard",
@@ -18,9 +18,9 @@
   "developerRepoUrl": "https://github.com/daskeyboard/q-applet-game-deals",
   "license": "GPL",
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
-  "changelogUrl": "https://github.com/daskeyboard/daskeyboard-applet--game-deals-forecast/blob/master/CHANGELOG.md",
-  "readMeUrl": "https://github.com/daskeyboard/daskeyboard-applet--game-deals-forecast/blob/master/README.md",
-  "readMeEndUserUrl": "https://github.com/daskeyboard/daskeyboard-applet--game-deals-forecast/blob/master/README_ENDUSER.md",
+  "changelogUrl": "CHANGELOG.md",
+  "readMeUrl": "README.md",
+  "readMeEndUserUrl": "README_ENDUSER.md",
   "engines": {
     "das-keyboard-q": "3.1.x"
   },
