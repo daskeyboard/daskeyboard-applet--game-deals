@@ -141,6 +141,10 @@ class GameDeals extends q.DesktopApp {
         ],
         name: `New Game Deal!`,
         message: messages.join("\n"),
+        link: {
+          url: deals[0].link,
+          label: 'See this deal',
+        }
       });
     } else {
       return null;

@@ -85,6 +85,8 @@ describe('GameDeals', function () {
     const app = buildApp();
     return app.run().then(signal => {
       assert.ok(signal);
+      assert.ok(signal.link.url);
+      assert.ok(signal.link.label);
     });
   });
 
