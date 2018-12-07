@@ -8,7 +8,7 @@ See alerts for recent game deals, on a Das Keyboard Q series.
 
 Displays a signal when a new deal goes live for a wanted game.
 
-![Game Deals on a Das Keybaord Q](/assets/image.png "Q Game Deals")
+![Game Deals on a Das Keybaord Q](assets/image.png "Q Game Deals")
 
 ## Changelog
 
@@ -23,8 +23,8 @@ the Q Desktop application (https://www.daskeyboard.com/q)
 
 ## Running tests
 
-    yarn test
-    
+- `yarn test`
+
 ## Contributions
 
 Pull requests welcome.
