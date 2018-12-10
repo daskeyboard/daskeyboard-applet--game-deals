@@ -43,14 +43,6 @@
         }
       }
     },
-    "applet": {
-      "defaults": {
-        "cityId": "http://www.yr.no/place/United_States/Texas/Austin/forecast.xml",
-        "cityId_LABEL": "Austin, Texas (United States)",
-        "units": "metric",
-        "units_LABEL": "Metric"
-      }
-    },
     "questions": [
       {
         "key": "searchTerms",
