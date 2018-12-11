@@ -79,7 +79,8 @@ function processData(data, searchTerms) {
   const deals = [];
   for (let json of items) {
     const item = RssItem.revive(json);
-    const simplified = { ...item
+    const simplified = {
+      ...item
     };
     simplified.title = simplifyTerm(simplified.title);
     simplified.description = simplifyTerm(simplified.description);
@@ -100,7 +101,6 @@ function processData(data, searchTerms) {
   return deals;
 }
 
-
 /**
  * Generate the signal text for a given deal
  * @param {RssItem} deal 
@@ -115,6 +115,7 @@ class GameDeals extends q.DesktopApp {
     super();
     // store a record of previously notified deals
     this.dealsNotified = {};
+    this.pollingInterval = 5 * 60 * 1000; // ms
   }
 
   /**
