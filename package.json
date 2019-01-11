@@ -2,7 +2,7 @@
   "name": "daskeyboard-applet--game-deals",
   "displayName": "Game Deals",
   "version": "1.0.0",
-  "description": "Receive notifications of game deals on a Das Keyboard Q",
+  "description": "Displays wanted games offers.",
   "longDescription": "Be aware of the latest game deals being discussed on cheapassgamer.com.",
   "officialProductName": "Game Deals",
   "appUrl": "",
