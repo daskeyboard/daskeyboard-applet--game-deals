@@ -22,9 +22,10 @@ async function retrieveRss() {
           reject(err);
         } else {
           resolve(result);
-        }
-      });
-    });
+      }})
+    })
+  }).catch(error=>{
+    logger.error("retrieveRss() function error: "+error);
   });
 }
 
@@ -74,7 +75,7 @@ function simplifyTerm(term) {
  * Process raw JSON into deals
  * @param {String} data 
  */
-function processData(data, searchTerms) {
+async function processData(data, searchTerms) {
   const items = data.rss.channel[0].item;
   const deals = [];
   for (let json of items) {
@@ -115,7 +116,8 @@ class GameDeals extends q.DesktopApp {
     super();
     // store a record of previously notified deals
     this.dealsNotified = {};
-    this.pollingInterval = 5 * 60 * 1000; // ms
+    // run every 5 mintues
+    this.pollingInterval = 5 * 60 * 1000;
   }
 
   /**
@@ -153,7 +155,7 @@ class GameDeals extends q.DesktopApp {
   }
 
   async run() {
-    logger.info("Running.");
+    logger.info("Game Deals running.");
     const searchTerms = this.config.searchTerms;
 
     if (searchTerms) {
@@ -161,11 +163,16 @@ class GameDeals extends q.DesktopApp {
 
       return retrieveRss()
         .then(body => {
-          return processData(body, searchTerms);
+          logger.info("This is body: "+JSON.stringify(body));
+          if(body){
+            return processData(body, searchTerms).then(deals => {
+              return this.generateSignal(deals);
+            });
+          }else{
+            return q.Signal.error("The Game Deals service returned an error. <b>Please check your internet connection</b>.");
+          }
         })
-        .then(deals => {
-          return this.generateSignal(deals);
-        })
+
     } else {
       logger.warn("No searchTerms configured.");
       return null;
