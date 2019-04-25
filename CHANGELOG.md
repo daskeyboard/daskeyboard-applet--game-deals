@@ -1,6 +1,6 @@
 # Changelog Q Applet Game Deals
 
-## Version 1.0.1 - April 17, 2019
+## Version 1.0.1 - April 25, 2019
 
 Handled internet connection error
 
