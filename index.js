@@ -26,6 +26,7 @@ async function retrieveRss() {
     })
   }).catch(error=>{
     logger.error("retrieveRss() function error: "+error);
+    throw new Error(`Error when trying to retrieveRss(): ${error}`);
   });
 }
 
@@ -171,7 +172,15 @@ class GameDeals extends q.DesktopApp {
           }else{
             return q.Signal.error("The Game Deals service returned an error. <b>Please check your internet connection</b>.");
           }
-        })
+        }).catch(error => {
+          logger.error(`Error while getting serverfault inbox ${error}`);
+          if(`${error.message}`.includes("getaddrinfo")){
+            return q.Signal.error(
+              'The Game Deal service returned an error. <b>Please check your internet connection</b>.'
+            );
+          }
+          return q.Signal.error([`The Game Deal service returned an error. Detail: ${error}`]);
+        });
 
     } else {
       logger.warn("No searchTerms configured.");
